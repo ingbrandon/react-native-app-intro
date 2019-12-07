@@ -352,7 +352,8 @@ export default class AppIntro extends Component {
 
             this.props.onSlideChange(state.index, state.total);
           }}
-          onScroll={Animated.event(
+          //showsButtons={true}
+          onScrollBeginDrag={Animated.event(
             [{ x: this.state.parallax }]
           )}
         >
